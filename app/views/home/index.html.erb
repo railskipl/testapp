@@ -1,4 +1,12 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<div align="center" style="margin:10px 0 0 0"><h1>Home Page</h1></div>
+<div id="header_left">
+	
+	<div class="mainmenu">
+		<% if user_signed_in? %>
+			<ul>
+				<li><a href="/contacts" title="">Contacts</a></li>
+			</ul>
+			
+		<% end %>
+	</div>
+</div>

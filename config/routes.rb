@@ -1,4 +1,6 @@
 Rails3DeviseRspecCucumber::Application.routes.draw do
+  resources :contacts
+
   authenticated :user do
     root :to => 'home#index'
   end

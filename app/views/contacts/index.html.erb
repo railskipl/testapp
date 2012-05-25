@@ -1,0 +1,11 @@
+<h1>Contact List</h1>
+
+<div id="contacts"><%= render :partial => "contact" %></div>
+
+<div id="modal-box" style="display:none;"></div>
+
+
+
+<br />
+
+<%= link_to 'New Contact', {:controller=>"contacts",:action => 'new'} , :remote => true %>

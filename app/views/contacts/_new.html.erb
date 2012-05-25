@@ -1,0 +1,18 @@
+<%= form_for @contact, :remote => true do |f| %>
+  
+  <div id="form-errors"></div>
+  
+  <p>
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_area :address %>
+  </p>
+  <p>
+    <%= f.label :phone_no %><br />
+    <%= f.text_field :phone_no %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

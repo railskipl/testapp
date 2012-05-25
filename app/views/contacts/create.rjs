@@ -1,0 +1,10 @@
+if @error.nil?
+	page.replace_html 'form-errors', :text => ''
+  page.replace_html 'contacts', :partial => 'contact'
+  page << "Modalbox.hide();"
+else
+  
+	page.replace_html 'form-errors', :partial => 'errors', :object => @contact
+  page.visual_effect(:highlight, 'form-errors')
+  
+end
