@@ -17,3 +17,7 @@ gem "launchy", ">= 2.1.0", :group => :test
 gem "devise", ">= 2.1.0"
 gem 'therubyracer'
 gem 'prototype-rails'
+group :production do
+   gem 'pg'
+   gem 'therubyracer-heroku', '0.8.1.pre3'
+end
